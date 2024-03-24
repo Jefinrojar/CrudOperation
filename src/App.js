@@ -70,7 +70,6 @@ function App() {
           <button className='btn btn-p' onClick={onOpenModal}><PlusCircle size={16}></PlusCircle><span>Add+</span></button>
         </div>
         <hr />
-        {/* <p>{JSON.stringify(userdata)}</p> */}
         <table className='table'>
           <thead>
             <tr>
@@ -100,7 +99,7 @@ function App() {
 
         <Modal open={open} onClose={onCloseModal} center>
           <h2>{action} User</h2>
-          {/* <p>{JSON.stringify(user)}</p> */}
+
           <div className='form'>
             <label htmlFor="">UserName</label>
             <input type="text" value={user.name} onChange={(e) => setUser({ ...user, "name": e.target.value })} required />
